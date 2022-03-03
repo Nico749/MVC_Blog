@@ -1,0 +1,20 @@
+[
+    {
+      "name": "Using sequelize",
+      "description": "I love to use sequelize everyday to manage my queries.",
+      "hasComments": "false"
+    },
+    {
+      "name": "Bootstrap",
+      "description": "I always use this library because it is awesome",
+      "hasComments":"false"
+    },
+    {
+      "name": "MVC is awesome",
+      "description": "I love to use MVC to organise my directories.",
+      "hasComments":"true",
+      "comments":"I agree with you "
+    
+    }
+  ]
+  
