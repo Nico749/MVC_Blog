@@ -5,21 +5,22 @@ const newFormHandler = async (event) => {
     const description = document.querySelector('#note-desc').value.trim();
   
     if (name && description) {
-      const response = await fetch(`/api/notes`, {
-        method: 'POST',
-        body: JSON.stringify({ name, description }),
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      });
-  
-      if (response.ok) {
-        document.location.replace('/profile');
-      } else {
-        alert('Failed to create note');
+        const response = await fetch(`/api/notes`, {
+          method: 'POST',
+          body: JSON.stringify({ name, description }),
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        });
+    
+        if (response.ok) {
+          document.location.replace('/profile');
+        
+        } else {
+          alert('Failed to create note');
+        }
       }
-    }
-  };
+    };
   
   const delButtonHandler = async (event) => {
     if (event.target.hasAttribute('data-id')) {
@@ -38,7 +39,7 @@ const newFormHandler = async (event) => {
   };
   
   document
-    .querySelector('.new-note-form')
+    .querySelector('.new-note')
     .addEventListener('submit', newFormHandler);
   
   document
