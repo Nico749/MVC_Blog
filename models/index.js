@@ -7,14 +7,16 @@ User.hasMany(Note, {
   onDelete: 'CASCADE'
 });
 
+Note.belongsTo(User, {
+  foreignKey: 'user_id',
+});
+
 User.hasMany(Comment,{
   foreignKey: 'user_id',
   onDelete:'CASCADE'
 })
 
-Note.belongsTo(User, {
-  foreignKey: 'user_id',
-});
+
 
 Note.hasMany(Comment,{
   foreignKey: 'note_id',
