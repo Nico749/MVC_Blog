@@ -5,15 +5,16 @@
     <h2>
       <!-- Call helper function with triple brackets to render the emoji span as HTML -->
       {{!-- {{{get_emoji}} --}}
-      <a href="/note/{{note.id}}">{{note.name}}</a>
+      <a href="/note/{{note.id}}">{{note.notename}}</a>
     </h2>
  
-    <p>Created by {{note.usertable.name}} on {{format_date note.date_created}}</p>
+    <p>Created by {{usertable.name}} on {{ format_date note.date_created}}</p>
   </div>
   <div class="col-md-7">
     <p>
       {{note.description}}
     </p>
+    
   
 
 </div>

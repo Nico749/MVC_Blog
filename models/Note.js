@@ -11,7 +11,7 @@ Note.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    name: {
+    notename: {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -23,7 +23,6 @@ Note.init(
       allowNull: false,
       defaultValue: DataTypes.NOW,
     },
-  
     user_id: {
       type: DataTypes.INTEGER,
       references: {

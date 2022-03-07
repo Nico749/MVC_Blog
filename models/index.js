@@ -7,17 +7,27 @@ User.hasMany(Note, {
   onDelete: 'CASCADE'
 });
 
+User.hasMany(Comment,{
+  foreignKey: 'user_id',
+  onDelete:'CASCADE'
+})
+
 Note.belongsTo(User, {
   foreignKey: 'user_id',
 });
 
 Note.hasMany(Comment,{
-  foreignKey: 'note_id'
-})
-
-Comment.belongsTo(Note,{
   foreignKey: 'note_id',
   onDelete:'CASCADE'
 })
 
-module.exports = { User, Note };
+Comment.belongsTo(Note,{
+  foreignKey: 'note_id',
+  
+})
+
+Comment.belongsTo(User, {
+  foreignKey: 'user_id',
+});
+
+module.exports = { User, Note, Comment };
