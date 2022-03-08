@@ -7,12 +7,12 @@ const noteData = require('./noteData.json');
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
-
+//generates all users 
   const users = await User.bulkCreate(userData, {
     individualHooks: true,
     returning: true,
   });
-
+//generates all notes and give a random user_id everytime
   for (const note of noteData) {
     await Note.create({
       ...note,
