@@ -39,11 +39,10 @@ Room for improvement:
 * Fix variables names and ids
 * Implement comment functionality
 * Style
-* Fix the heroku deployment, that runs smoothly but doesn't allow a new user to sign up
 
 ## Installation
 
-To run locally the application clone [this link](https://github.com/Nico749/MVC_Blog.git) on your local machine or check the [heroku]() version
+To run locally the application clone [this link](https://github.com/Nico749/MVC_Blog.git) on your local machine or check the [heroku](https://warm-brushlands-06905.herokuapp.com/) version
 
 
 ## License
