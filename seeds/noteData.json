@@ -1,16 +1,10 @@
 [
-    {
-      "notename": "Using sequelize",
-      "description": "I love to use sequelize everyday to manage my queries."
-    },
-    {
-      "notename": "Bootstrap",
-      "description": "I always use this library because it is awesome"
-    },
-    {
-      "notename": "MVC is awesome",
-      "description": "I love to use MVC to organise my directories."
-    
-    }
-  ]
-  
+  {
+    "name": "Handlebars",
+    "description": "They are very useful"
+  },
+  {
+    "name": "React",
+    "description": "I use it everyday for everything "
+  }
+]

@@ -11,7 +11,7 @@ Note.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    notename: {
+    name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -23,20 +23,21 @@ Note.init(
       allowNull: false,
       defaultValue: DataTypes.NOW,
     },
+   
     user_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'usertable',
+        model: 'user',
         key: 'id',
       },
-    }
-},
+    },
+  },
   {
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'note',
+    modelName: 'project',
   }
 );
 
